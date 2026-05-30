@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Poppins", sans-serif;
+  --font-sans: "Poppins", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-primary: #3B1F5E; /* Dark Purple primary accent */
+  --color-brand-accent: #3B1F5E;  /* Dark Purple accent */
+  --color-brand-gold: #C9A84C;    /* Muted gold secondary accent */
+  --color-brand-beige: #E6E1D8;   /* Muted warm beige for light borders/backings */
+  --color-brand-cream: #F8F5F0;   /* Warm off-white primary background */
+  --color-brand-dark: #1F1527;    /* Deep dark charcoal/purple-tinted text */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-brand-cream);
+    color: var(--color-brand-dark);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+    font-weight: 700;
+  }
+}
+
+.section-title {
+  font-family: var(--font-sans);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: var(--color-brand-primary);
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+}
+
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(59, 31, 94, 0.1);
+}
+
+
