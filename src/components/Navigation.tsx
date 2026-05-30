@@ -66,11 +66,10 @@ export default function Navigation() {
         {/* Brand Name */}
         <button 
           onClick={() => scrollToSection('hero')} 
-          className="text-left font-sans text-lg md:text-xl font-bold tracking-tight text-white hover:text-brand-gold transition-colors"
+          className="group text-left"
         >
-          Md. Shariful Islam
-          <span className="block text-[10px] font-sans uppercase tracking-[0.2em] font-medium text-brand-cream/60 mt-0.5">
-            Operations & NGO Leader
+          <span className="font-sans text-2xl font-black uppercase text-white group-hover:text-brand-gold transition-colors block tracking-widest">
+            sha<span className="text-brand-gold font-serif italic lowercase font-light">R</span>if
           </span>
         </button>
 

@@ -36,38 +36,28 @@ export default function Hero() {
       </div>
 
       <div className="max-w-5xl mx-auto px-6 relative z-10 flex flex-col items-center text-center">
-        {/* Subtle Pre-header Label */}
-        <div className="inline-flex items-center space-x-2 px-4 py-1.5 bg-brand-gold/15 text-brand-gold rounded-full text-xs font-bold tracking-widest uppercase mb-8 border border-brand-gold/20 animate-fade-in/80">
-          <span className="w-2 h-2 bg-brand-gold rounded-full animate-pulse"></span>
-          <span>Operations Professional & NGO Chairman</span>
-        </div>
 
         {/* Name */}
-        <h1 className="font-sans text-5xl md:text-8xl tracking-tight text-white mb-6 leading-[1.1] font-extrabold">
+        <h1 className="font-sans text-5xl md:text-8xl tracking-tight text-white mb-8 leading-[1.1] font-extrabold animate-fade-in">
           {PERSONAL_INFO.fullName}
         </h1>
 
-        {/* Tagline */}
-        <p className="font-sans text-xl md:text-2xl text-brand-gold max-w-4xl font-semibold tracking-tight leading-relaxed mb-4">
-          {PERSONAL_INFO.tagline}
-        </p>
+        {/* Tagline Styled as Custom Chips */}
+        <div className="flex flex-wrap items-center justify-center gap-2.5 mb-10 max-w-4xl font-sans">
+          {PERSONAL_INFO.tagline.split(' · ').map((keyword, index) => (
+            <span 
+              key={index} 
+              className="px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold tracking-wider uppercase bg-white/5 border border-white/10 text-brand-gold backdrop-blur-xs transition-colors hover:bg-white/10"
+            >
+              {keyword}
+            </span>
+          ))}
+        </div>
 
-        {/* Dynamic Subtext */}
-        <p className="font-sans text-sm md:text-lg text-brand-cream/80 max-w-2xl font-light mb-10 leading-relaxed italic">
-          "{PERSONAL_INFO.subtext}"
-        </p>
-
-        {/* Location & Graduation Info */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-xs md:text-sm text-brand-cream/70 font-semibold mb-12">
-          <span className="flex items-center gap-1.5">
-            <MapPin className="w-4 h-4 text-brand-gold" />
-            {PERSONAL_INFO.location}
-          </span>
-          <span className="hidden sm:inline text-white/20">|</span>
-          <span className="flex items-center gap-1.5">
-            <GraduationCap className="w-4 h-4 text-brand-gold" />
-            {PERSONAL_INFO.educationStatus} (Graduated June 2026)
-          </span>
+        {/* Location Info */}
+        <div className="flex items-center justify-center gap-1.5 text-xs md:text-sm text-brand-cream/70 font-semibold mb-12">
+          <MapPin className="w-4 h-4 text-brand-gold animate-bounce" />
+          <span>{PERSONAL_INFO.location}</span>
         </div>
 
         {/* Three Hero Stat Pills */}

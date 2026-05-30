@@ -89,7 +89,7 @@ export default function Odommo19() {
               </span>
               <span className="flex items-center gap-1.5">
                 <Layers className="w-3.5 h-3.5 text-brand-gold" />
-                4th Committee Council
+                Since Foundation
               </span>
             </div>
           </div>
@@ -97,7 +97,7 @@ export default function Odommo19() {
         </div>
 
         {/* Visual Stats Band */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-24">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
           {ODOMMO_STATS.map((stat, i) => (
             <div 
               key={i} 
@@ -114,61 +114,6 @@ export default function Odommo19() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Signature Programmes */}
-        <div>
-          <div className="mb-12">
-            <span className="text-brand-gold font-mono text-xs uppercase tracking-widest font-bold block mb-2">Sustainable Impact</span>
-            <h3 className="font-sans text-2xl md:text-4xl text-brand-primary font-extrabold">Signature Programmes & Initiatives</h3>
-            <p className="text-brand-dark/60 text-sm mt-2 max-w-xl font-light">
-              All programmes are actively audited and framed to meet United Nations Sustainable Development Goals.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {ODOMMO_PROGRAMMES.map((prog) => (
-              <div 
-                key={prog.id}
-                className="bg-white border border-brand-beige/50 p-8 rounded-3xl shadow-xs hover:shadow-md transform hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
-              >
-                <div>
-                  {/* Category & Icon */}
-                  <div className="flex items-center justify-between mb-6">
-                    <span className="text-[10px] font-mono text-brand-primary uppercase tracking-widest font-bold bg-brand-cream px-2 py-0.5 rounded border border-brand-beige/40">
-                      {prog.category}
-                    </span>
-                    <div className="w-12 h-12 rounded-2xl border flex items-center justify-center bg-brand-primary/10 border-brand-primary/10 shadow-xs">
-                      {getIcon(prog.id)}
-                    </div>
-                  </div>
-
-                  <h4 className="font-sans text-xl font-bold text-brand-primary mb-4 leading-snug">
-                    {prog.title}
-                  </h4>
-
-                  <p className="font-sans text-sm text-brand-dark/70 leading-relaxed mb-6 font-light">
-                    {prog.description}
-                  </p>
-                </div>
-
-                {/* SDG Tag Footer */}
-                <div className="pt-4 border-t border-brand-beige/50 flex flex-wrap gap-1.5 items-center">
-                  <span className="text-[9px] font-bold uppercase tracking-wider text-brand-dark/40 mr-1">Tied Goals:</span>
-                  {prog.sdgs.map((sdg, i) => (
-                    <span 
-                      key={i}
-                      className="inline-flex items-center text-[10px] font-extrabold px-2.5 py-1 bg-brand-primary/5 text-brand-primary rounded-full border border-brand-primary/10 hover:bg-brand-gold hover:text-brand-primary hover:border-brand-gold transition-colors cursor-pointer"
-                      title={sdg.name}
-                    >
-                      SDG {sdg.number}
-                    </span>
-                  ))}
-                </div>
-
-              </div>
-            ))}
-          </div>
         </div>
 
       </div>

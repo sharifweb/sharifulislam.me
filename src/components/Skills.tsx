@@ -104,6 +104,10 @@ export default function Skills() {
                 <span className="text-xs font-bold text-brand-dark">Native / Bilingual</span>
               </div>
               <div className="bg-brand-cream border border-brand-beige py-2.5 px-4 rounded-xl text-center">
+                <span className="text-[10px] font-mono text-brand-gold block font-bold uppercase tracking-wider">Hindi</span>
+                <span className="text-xs font-bold text-brand-dark">Fluent (Speaking & Listening)</span>
+              </div>
+              <div className="bg-brand-cream border border-brand-beige py-2.5 px-4 rounded-xl text-center">
                 <span className="text-[10px] font-mono text-brand-gold block font-bold uppercase tracking-wider">Swedish</span>
                 <span className="text-xs font-bold text-brand-dark">Basic / Conversational (L1)</span>
               </div>

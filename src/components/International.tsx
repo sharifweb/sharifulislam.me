@@ -7,6 +7,53 @@ export default function International() {
 
   const selectedProgram = EXCHANGE_PROGRAMS.find(p => p.id === activeTab) || EXCHANGE_PROGRAMS[0];
 
+  const getDynamicStats = () => {
+    switch (activeTab) {
+      case 'exc-sweden':
+        return {
+          focus: "Academic Focus: Circular Supply-Chain Modelling & AI Tech",
+          outcome: "ECTS Score Passed: 30 Swedish Credits (80% Top Mark)"
+        };
+      case 'exc-usa':
+        return {
+          focus: "Academic Focus: Political Rhetoric & Cross-Cultural Leadership",
+          outcome: "Outcome Highlight: Presented Digital Literacy Analysis to Faculty Boards"
+        };
+      case 'exc-egypt':
+        return {
+          focus: "Academic Focus: COP30 Simulate Summit Policy Formulation",
+          outcome: "Outcome Highlight: Delegated State Diplomat in Just Transition Lab"
+        };
+      case 'exc-hungary':
+        return {
+          focus: "Academic Focus: Circular Consumption & Non-Formal Pedagogies",
+          outcome: "Outcome Highlight: Inspired Street-Drama Concepts in Gafargaon"
+        };
+      case 'exc-poland':
+        return {
+          focus: "Academic Focus: Macro-regional Economics & Quadruple-Helix Models",
+          outcome: "Outcome Highlight: Outlined Trade Policies for Baltic Corridors"
+        };
+      case 'exc-malaysia-v':
+        return {
+          focus: "Academic Focus: Venture Capital & Scale-Stage Funding Models",
+          outcome: "Outcome Highlight: Graduated with Perfect 3.94/4.00 Grade"
+        };
+      case 'exc-russia-v':
+        return {
+          focus: "Academic Focus: Cognitive Cultural Semiotics & Team Conflict Mitigation",
+          outcome: "Outcome Highlight: Achieved Perfect 5.00/5.00 Grade"
+        };
+      default:
+        return {
+          focus: "Academic Focus: Multi-Regional Governance & Circular Economics",
+          outcome: "Academic Highlight: 5 In-Person International Programmes Completed"
+        };
+    }
+  };
+
+  const dynamicStats = getDynamicStats();
+
   // Coordinates roughly representing positions of states on a stylized mercator plane
   const countryPins = [
     { id: 'exc-sweden', name: 'Sweden', x: '51%', y: '23%', flag: '🇸🇪' },
@@ -182,12 +229,12 @@ export default function International() {
         <div className="bg-white border border-brand-beige/50 p-6 rounded-2xl text-center shadow-xs flex flex-col sm:flex-row items-center justify-around gap-4 text-sm font-semibold text-brand-dark/70">
           <div className="flex items-center gap-2.5">
             <Milestone className="w-4 h-4 text-brand-gold" />
-            <span>Academic Focus: Multi-Regional Governance & Circular Economics</span>
+            <span>{dynamicStats.focus}</span>
           </div>
           <span className="hidden sm:inline text-brand-beige">|</span>
           <div className="flex items-center gap-2.5">
             <GraduationCap className="w-4 h-4 text-brand-primary" />
-            <span>ECTS Score Passed: 30 Swedish Credits (80% Top Mark)</span>
+            <span>{dynamicStats.outcome}</span>
           </div>
         </div>
 

@@ -34,7 +34,7 @@ export default function About() {
 
                 <div className="text-center px-4">
                   <h4 className="font-sans text-xl font-bold text-white">Md. Shariful Islam</h4>
-                  <p className="text-[10px] font-bold text-brand-gold uppercase tracking-widest mt-1">Gafargaon to Five Continents</p>
+                  <p className="text-[10px] font-bold text-brand-gold uppercase tracking-widest mt-1">International Scholar & Operations Pro</p>
                   
                   {/* Coordinates for aesthetic framing */}
                   <p className="text-[9px] font-mono text-brand-cream/40 mt-3 tracking-widest">
@@ -83,9 +83,9 @@ export default function About() {
             </div>
 
             {/* Three Cards as described in Section 2 */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 pt-10 border-t border-brand-beige">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 pt-10 border-t border-brand-beige">
               
-              <div className="p-5 rounded-xl bg-white border border-brand-beige hover:border-brand-gold/30 hover:shadow-md transition-all duration-300">
+              <div className="p-6 rounded-2xl bg-white/80 border border-brand-beige hover:border-brand-gold/40 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 block shadow-xs">
                 <div className="w-10 h-10 rounded-lg bg-brand-primary/5 border border-brand-primary/10 flex items-center justify-center text-brand-primary mb-3">
                   <Building2 className="w-5 h-5 text-brand-gold animate-pulse" />
                 </div>
@@ -97,7 +97,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="p-5 rounded-xl bg-white border border-brand-beige hover:border-brand-gold/30 hover:shadow-md transition-all duration-300">
+              <div className="p-6 rounded-2xl bg-white/80 border border-brand-beige hover:border-brand-gold/40 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 block shadow-xs">
                 <div className="w-10 h-10 rounded-lg bg-brand-primary/5 border border-brand-primary/10 flex items-center justify-center text-brand-primary mb-3">
                   <Navigation className="w-5 h-5 text-brand-gold" />
                 </div>
@@ -109,7 +109,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="p-5 rounded-xl bg-white border border-brand-beige hover:border-brand-gold/30 hover:shadow-md transition-all duration-300">
+              <div className="p-6 rounded-2xl bg-white/80 border border-brand-beige hover:border-brand-gold/40 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 block shadow-xs">
                 <div className="w-10 h-10 rounded-lg bg-brand-primary/5 border border-brand-primary/10 flex items-center justify-center text-brand-primary mb-3">
                   <GraduationCap className="w-5 h-5 text-brand-gold" />
                 </div>

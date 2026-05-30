@@ -9,20 +9,34 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [submitted, setSubmitted] = useState<boolean>(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name || !email || !message) return;
     
     setIsSubmitting(true);
     
-    // Simulate API delivery
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+      
+      if (response.ok) {
+        setSubmitted(true);
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        console.error('Failed to submit message to the backend api route');
+      }
+    } catch (err) {
+      console.error('Error submitting form:', err);
+    } finally {
       setIsSubmitting(false);
-      setSubmitted(true);
-      setName('');
-      setEmail('');
-      setMessage('');
-    }, 1200);
+    }
   };
 
   return (

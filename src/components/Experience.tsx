@@ -47,10 +47,12 @@ export default function Experience() {
                         <span className="text-[10px] font-mono text-brand-primary bg-brand-primary/5 px-2.5 py-1 rounded-full border border-brand-primary/10 font-bold uppercase tracking-wider">
                           {item.type}
                         </span>
-                        <span className="flex items-center gap-1 text-xs text-brand-dark/50 font-semibold font-mono">
-                          <Clock className="w-3.5 h-3.5 text-brand-gold" />
-                          {item.hoursPerWeek} Hrs / wk
-                        </span>
+                        {item.hoursPerWeek && (
+                          <span className="flex items-center gap-1 text-xs text-brand-dark/50 font-semibold font-mono">
+                            <Clock className="w-3.5 h-3.5 text-brand-gold" />
+                            {item.hoursPerWeek} Hrs / wk
+                          </span>
+                        )}
                       </div>
 
                       {/* Main Title & Company */}
