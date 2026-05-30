@@ -1,0 +1,6 @@
+{
+  "name": "Shariful Portfolio",
+  "description": "Personal Portfolio of Md. Shariful Islam - NGO Co-founder, Operations Leader & Climate Advocate.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
