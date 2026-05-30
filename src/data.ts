@@ -11,26 +11,25 @@ import {
 
 export const PERSONAL_INFO = {
   fullName: "Md. Shariful Islam",
-  tagline: "Builder of systems. Shaper of futures. Citizen of the world.",
-  subtext: "Where grassroots meets global — from Gafargaon to five continents.",
+  tagline: "Co-founder at Odommo '19 · Climate Advocate · Operations Expert · Management Professional",
+  subtext: "",
   location: "Dhaka, Bangladesh",
   educationStatus: "BSc in Information Technology & Management (ITM)",
   institution: "Daffodil International University",
-  graduationDate: "Graduated June 2026",
   email: "mail.mdsharif@gmail.com",
   phone: "+880 1790-071378",
   linkedin: "https://www.linkedin.com/in/sharif-link",
   facebook: "https://www.facebook.com/name.sharif",
   bioParagraphs: [
-    "I grew up in Gafargaon, Mymensingh — and at 16, in class 10, I co-founded an organization, ODOMMO ’19, with classmates that I thought would last a year. That was October 2018. It's still running.",
-    "Since then, I've worn many hats simultaneously: NGO chairman leading a national youth movement, operations professional working remotely for companies in the USA and Dubai, scholar completing an internationally mobile degree, and researcher exploring how clean energy and sustainable trade can reshape developing economies.",
-    "I graduated with a BSc in Information Technology & Management from Daffodil International University in June 2026 — having also studied in Sweden on an Erasmus+ scholarship, attended programmes in Poland, Hungary, and Egypt, and worked professionally across two continents without pausing my studies or my organization.",
-    "What drives me is building things that outlast me — whether that's a youth foundation entering its eighth year, a system that makes a team more organized, or a piece of research that asks a better question about how Bangladesh can grow more sustainably."
+    "Growing up in Gafargaon, Mymensingh, my path changed forever when I co-founded Odommo '19 with my high school classmates at just 16 years old. What started as a local youth-led project grew into a registered national foundation, becoming the root of my entire journey. Leading Odommo '19 laid the foundations of my professional drive, my worldview, and my commitment to public service.",
+    "This early civic leadership opened doors to profound international exposure and academic development. I completed credit exchange semesters at Mälardalen University in Sweden under the prestigious Erasmus+ scholarship, negotiated climate finance policies at the COP30 Simulate Summit in Egypt, and specialized in circular economies at Sustainable Mindset programs in Hungary and Poland. Across these programs, I explored 13 countries modeling international cooperation.",
+    "Simultaneously, I accelerated my corporate career, executing operations and pipeline management for high-growth tech firms and agencies. From managing digital operations in US firm Beige Corporation to leading delivery queues as an Operations Consultant for Fredocloud in Dubai, I built robust CRM tracking models and cross-border workflows.",
+    "I graduated with a BSc in Information Technology & Management from Daffodil International University, maintaining an exceptional CGPA of 3.87/4.00 alongside full-time remote corporate and NGO commitments. Today, I continue to consult for scaling startups, expand Odommo '19's national and environmental campaigns, and conduct research in clean energy grids."
   ],
   quickStats: [
     { value: "7.5+ Years", label: "leading Odommo '19" },
-    { value: "13 Countries Explored", label: "5 international programmes" },
-    { value: "Operations Pro", label: "3 companies · 2 continents" }
+    { value: "5 International Programmes", label: "13 Countries Explored" },
+    { value: "Operations Pro", label: "Global pipeline management & workflow optimization" }
   ]
 };
 
@@ -115,10 +114,9 @@ export const EXPERIENCE_TIMELINE: ExperienceItem[] = [
   {
     id: "exp-fredo",
     role: "Operations Consultant",
-    company: "Fredocloud (Dubai, UAE, Remote)",
+    company: "Fredocloud",
     location: "Dubai, UAE / Remote",
     type: "Remote Consultancy",
-    hoursPerWeek: 40,
     startDate: "April 2026",
     endDate: "Present",
     highlights: [
@@ -130,11 +128,10 @@ export const EXPERIENCE_TIMELINE: ExperienceItem[] = [
   },
   {
     id: "exp-beige-3",
-    role: "Operations Manager (Previously Operations Associate)",
+    role: "Operations Manager",
     company: "Beige Corporation (USA, Remote)",
     location: "Los Angeles, CA / Remote",
     type: "Full-Time",
-    hoursPerWeek: 45,
     startDate: "December 2025",
     endDate: "February 2026",
     highlights: [
@@ -147,7 +144,7 @@ export const EXPERIENCE_TIMELINE: ExperienceItem[] = [
   },
   {
     id: "exp-beige-2",
-    role: "Assistant Sales Manager (Operations Focus)",
+    role: "Assistant Sales Manager",
     company: "Beige Corporation (USA, Remote)",
     location: "Los Angeles, CA / Remote",
     type: "Full-Time",
@@ -241,11 +238,10 @@ export const EXPERIENCE_TIMELINE: ExperienceItem[] = [
   },
   {
     id: "exp-consulate",
-    role: "Project Consulate HR & Admission Assistant",
-    company: "Project Consulate (Bangladesh, Hybrid)",
+    role: "Project Consultant, HR",
+    company: "Project Consulate",
     location: "Dhaka, Bangladesh",
-    type: "Contract",
-    hoursPerWeek: 35,
+    type: "Hybrid Consultancy",
     startDate: "August 2023",
     endDate: "December 2023",
     highlights: [
@@ -256,11 +252,10 @@ export const EXPERIENCE_TIMELINE: ExperienceItem[] = [
   },
   {
     id: "exp-yo",
-    role: "Bangla Team Internship",
-    company: "Youth Opportunities (Bangladesh / Remote)",
-    location: "Dhaka, Bangladesh / Remote",
+    role: "Intern — Bangla Content Team",
+    company: "Youth Opportunities",
+    location: "Dhaka, Bangladesh",
     type: "Internship",
-    hoursPerWeek: 20,
     startDate: "June 2020",
     endDate: "November 2020",
     highlights: [
@@ -268,21 +263,6 @@ export const EXPERIENCE_TIMELINE: ExperienceItem[] = [
       "Translated high-level academic calls and application guidelines from English to native Bangla to ensure clarity and equity of access."
     ],
     skills: ["Opportunity Sourcing", "Translation", "Content Curation"]
-  },
-  {
-    id: "exp-dobrimir",
-    role: "Navatar Innovator / Fellow",
-    company: "DobriMir Welfare Association (Russia / Remote)",
-    location: "Moscow, Russia / Remote",
-    type: "Fellowship",
-    hoursPerWeek: 15,
-    startDate: "May 2019",
-    endDate: "April 2020",
-    highlights: [
-      "Awarded the prestigious 'DobriMir Welfare Fellowship 2019' centered on community welfare innovations.",
-      "Contributed to international business development and community project layouts, and coordinated photography events to support global youth causes."
-    ],
-    skills: ["Intercultural Collaboration", "Social Media Care", "Event Ideation"]
   }
 ];
 
@@ -373,20 +353,20 @@ export const EDUCATION: EducationItem[] = [
   },
   {
     id: "edu-hsc",
-    degree: "Higher Secondary Certificate (HSC) — Science Stream",
+    degree: "Higher Secondary Certificate (HSC) — Science",
     institution: "Shahid Syed Nazrul Islam College",
     location: "Mymensingh, Bangladesh",
     dates: "Class of 2021",
-    grade: "GPA: 5.00/5.00 (Perfect Board Standing)",
+    grade: "GPA: 5.00/5.00 (Golden A+)",
     highlights: "Distinguished pre-university college. Focused on core physics, chemistry, higher mathematics, and biology."
   },
   {
     id: "edu-ssc",
-    degree: "Secondary School Certificate (SSC) — Science Stream",
+    degree: "Secondary School Certificate (SSC) — Science",
     institution: "Gafargaon Islamia Government High School",
     location: "Mymensingh, Bangladesh",
     dates: "Class of 2019",
-    grade: "GPA: 5.00/5.00 (Perfect Board Standing)",
+    grade: "GPA: 5.00/5.00 (Golden A+)",
     highlights: "Established and historically prominent high school. This is where I co-founded Odommo '19 during my 10th-grade class with classmates."
   }
 ];
@@ -477,6 +457,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       "B2B Client Coordination & Negotiations",
       "English (Expert: TOEFL & DET Verified)",
       "Bangla (Native Proficiency)",
+      "Hindi (Fluent: Speaking & Listening)",
       "Swedish (Conversational / Level 1)"
     ]
   }
@@ -526,13 +507,6 @@ export const HONORS_AWARDS: HonorItem[] = [
     description: "Recognized for driving massive rural literacy campaign logistics throughout central Mymensingh."
   },
   {
-    id: "hon-dobri",
-    title: "DobriMir Welfare Fellowship Selection",
-    issuer: "DobriMir Association, Moscow, Russia",
-    year: "2019",
-    description: "Elected to a paid Russian welfare fellowship following a competitive multi-national social action challenge."
-  },
-  {
     id: "hon-children",
     title: "Divisional Winner & National Runner-Up",
     issuer: "National Children's Prize Competition",
@@ -549,6 +523,12 @@ export const VOLUNTEERING_EXTRA: { title: string; organization: string; dates: s
     details: "Lead a coalition of 200+ active youth workers across 4 districts delivering structural SDG development programs."
   },
   {
+    title: "District Volunteer",
+    organization: "Volunteer for Bangladesh (VBD) — Mymensingh District",
+    dates: "Jan 2019 – Dec 2021",
+    details: "Organized localized social awareness hygiene drives, youth empowerment workshops, and environment safety events."
+  },
+  {
     title: "Rover Scout",
     organization: "Scouter Rafiqul Islam Open Scout Group",
     dates: "Jun 2019 – May 2022",
@@ -561,12 +541,6 @@ export const VOLUNTEERING_EXTRA: { title: string; organization: string; dates: s
     details: "Supervised high-impact child education schedules, rural clothing donation runs, and local medical support campaigns."
   },
   {
-    title: "Active Member",
-    organization: "BD Clean — Mymensingh Section",
-    dates: "Jun 2019 – Jun 2021",
-    details: "Coordinated extensive physical sanitation operations on waterbodies and inner-city streets to advocate civil duty."
-  },
-  {
     title: "Active Department Volunteer",
     organization: "Daffodil ITM Summit Logistics Core",
     dates: "July 2022",
@@ -577,44 +551,44 @@ export const VOLUNTEERING_EXTRA: { title: string; organization: string; dates: s
 export const GALLERY_MOMENTS: GalleryMoment[] = [
   {
     id: "gal-1",
-    caption: "Climate Strike rally, co-leading mobilizations and demanding loss-and-damage climate financing from global high-emission nations.",
-    location: "National Press Club, Dhaka, Bangladesh",
-    year: "November 2025",
-    imageTheme: "forest"
-  },
-  {
-    id: "gal-2",
-    caption: "Confronting global negotiators at the COP30 Simulate Summit representing climate-vulnerable coastal regions.",
-    location: "British University in Egypt, Cairo",
-    year: "October 2025",
+    caption: "COP30 Simulation Conference: Formulated green-job development policy proposals and green capacity architectures.",
+    location: "Egypt",
+    year: "Oct 2025",
     imageTheme: "desert"
   },
   {
-    id: "gal-3",
-    caption: "Erasmus+ academic semester at Västerås, capturing a crisp Swedish spring landscape while studying cloud system architectures.",
-    location: "Mälardalen University, Sweden",
-    year: "April 2024",
+    id: "gal-2",
+    caption: "Erasmus+ Semester Exchange: Rigorous focus on Sustainable Development, Circular Economy, and Cloud Systems.",
+    location: "Sweden",
+    year: "2024",
     imageTheme: "nordic"
   },
   {
-    id: "gal-4",
-    caption: "Co-founders conference planning at Gafargaon center, checking program agendas and organizing digital library distributions.",
-    location: "Odommo '19 Headquarters, Mymensingh",
-    year: "August 2023",
+    id: "gal-3",
+    caption: "ASECU Youth Winter School: Presented empirical models of international student cooperation schemes.",
+    location: "Poland",
+    year: "Mar 2024",
     imageTheme: "civic"
   },
   {
-    id: "gal-5",
-    caption: "Designing experimental organic upcycling crafts during the Sustainable Mindset residential course program.",
-    location: "Hollókő Youth Center, Hungary",
+    id: "gal-4",
+    caption: "Sustainable Mindset Programme: Acquired active skills in circular consumption and environmental management.",
+    location: "Hungary",
     year: "May 2024",
     imageTheme: "circular"
   },
   {
+    id: "gal-5",
+    caption: "Personal Exploration: Exploring European history, architecture, and regional planning.",
+    location: "Paris, France",
+    year: "2024",
+    imageTheme: "forest"
+  },
+  {
     id: "gal-6",
-    caption: "Representing Daffodil International University during the grueling high-stakes inter-university presentation contests.",
-    location: "Daffodil Smart City, Savar, Dhaka",
-    year: "July 2023",
+    caption: "Daffodil International University: Maintained outstanding board-level scholastic excellence in IT & Management.",
+    location: "Dhaka, Bangladesh",
+    year: "2026",
     imageTheme: "academic"
   }
 ];

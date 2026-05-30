@@ -19,7 +19,7 @@ export interface ExperienceItem {
   company: string;
   location: string;
   type: string;
-  hoursPerWeek: number;
+  hoursPerWeek?: number;
   startDate: string;
   endDate: string;
   highlights: string[];
